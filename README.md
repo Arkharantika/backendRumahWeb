@@ -9,4 +9,4 @@ const DB = new Sequelize("wow", "root", "", {
 });
 
 3. kemudian pada folder utama ketik npm i --legacy-peer-deps pada main folder (yang ada file index.js nya) untuk instalasi modul
-4. buka postman
+4. buka postman dan import colection
