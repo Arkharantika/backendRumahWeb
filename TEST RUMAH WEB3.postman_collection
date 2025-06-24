@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "ea02edda-541b-4dc0-b2af-1b3a27dfaad5",
+		"name": "TEST RUMAH WEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46080996",
+		"_collection_link": "https://alpha-1372235.postman.co/workspace/alpha's-Workspace~aa42414f-850f-440c-85cb-8fb5b095c03f/collection/46080996-ea02edda-541b-4dc0-b2af-1b3a27dfaad5?action=share&source=collection_link&creator=46080996"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/register",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "payload",
+							"value": "{}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbHBoYW9uZSIsImVtYWlsIjoiYWxwaGFyYWRpc2FAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTA3Mzc5MDMsImV4cCI6MTc1MDczNzk2M30.6Jyz4HXuHGJwFxw24K13JpLxlXGK4qufssyorTbs6KQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ahmad2\",\r\n    \"email\":\"ahmad@gmail.com\",\r\n    \"password\":\"123123123\",\r\n    \"confPassword\":\"123123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/adduser",
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": [
+						{
+							"key": "algorithm",
+							"value": "HS256",
+							"type": "string"
+						},
+						{
+							"key": "isSecretBase64Encoded",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "payload",
+							"value": "{}",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "queryParamKey",
+							"value": "token",
+							"type": "string"
+						},
+						{
+							"key": "header",
+							"value": "{}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbHBoYW9uZSIsImVtYWlsIjoiYWxwaGFyYWRpc2FAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTA3NDAxOTEsImV4cCI6MTc1MDc0MDI1MX0.VNKT5jii_SBjE3U3ycdDIvZXdTPr2Yk1mkUupjPbNME",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"elsa\",\r\n    \"email\":\"elsa@gmail.com\",\r\n    \"password\":\"123123123\",\r\n    \"confPassword\":\"123123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/adduser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"alpha\",\r\n    \"email\":\"alpharadisa@gmail.com\",\r\n    \"password\":\"123123123\",\r\n    \"confPassword\":\"123123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbHBoYW9uZSIsImVtYWlsIjoiYWxwaGFyYWRpc2FAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTA3Mzc5MjksImV4cCI6MTc1MDczNzk4OX0.m7yPl91bdl4s3L4uLL91gv9kW2turhb3dKjKW2T4uUw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbHBoYW9uZSIsImVtYWlsIjoiYWxwaGFyYWRpc2FAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTA3Mzc5MjksImV4cCI6MTc1MDczNzk4OX0.m7yPl91bdl4s3L4uLL91gv9kW2turhb3dKjKW2T4uUw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbHBoYSIsImVtYWlsIjoiYWxwaGFyYWRpc2FAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTA3MzcyNTcsImV4cCI6MTc1MDczNzMxN30.6HEo6bPe9uo85nA_sPlViJtXpe1chxyyihcQCuYkpuY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"alphaone\",\r\n    \"email\":\"alpharadisa@gmail.com\",\r\n    \"password\":\"123123123\",\r\n    \"confPassword\":\"123123123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhbHBoYW9uZSIsImVtYWlsIjoiYWxwaGFyYWRpc2FAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3NTA3MzgwMDAsImV4cCI6MTc1MDczODA2MH0.niO9Is3YoRyd_BIitenvV-_IazfMUe54TA60sIhdR9A",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/users/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
