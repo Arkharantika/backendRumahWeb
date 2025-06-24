@@ -19,6 +19,7 @@ PROSES APLIKASI dan POSTMAN
 
 5. jalankan file, dengan mengetikkan "node index.js"
 6. yang pertama dijalankan fungsi "*register*" dulu, lalu "*login*" dengan user yg sudah berhasil di register 
-7. setelah login, jalankan "*get token*" untuk bisa mendapatkan token, yang nantinya di masukan ke dalam "*authorization*", dengan value "*Bearer <token>*"  
-8. baru setelah login toke bisa diakes dan semua fitur yang membutuhkan token dapat dijalankan
-9. Terdapat fitur "*logout*" apabila hendak logout
+7. setelah login, jalankan "*get token*" untuk bisa mendapatkan token, yang nantinya di masukan ke dalam "*authorization*", dengan value "*Bearer <token>*"
+8. setiap API selain login dan register harus menyertakan "*authorization*", dengan value "*Bearer <token>*"
+9. baru setelah login toke bisa diakes dan semua fitur yang membutuhkan token dapat dijalankan
+10. Terdapat fitur "*logout*" apabila hendak logout
