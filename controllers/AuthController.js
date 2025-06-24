@@ -26,6 +26,26 @@ export const RegisterUser = async (req, res) => {
   }
 };
 
+// >>> Add NEW USER
+export const addUser = async (req, res) => {
+  const { name, email, password, confPassword } = req.body;
+  if (password !== confPassword)
+    return res.status(400).json("password are not match!");
+  const salt = await bcrypt.genSalt();
+  const hashedPassword = await bcrypt.hash(password, salt);
+  try {
+    await Users.create({
+      name: name,
+      password: hashedPassword,
+      email: email,
+      role: "user",
+    });
+    return res.status(200).json("add user success !");
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 // >>> LOGIN USER
 export const LoginUser = async (req, res) => {
   try {

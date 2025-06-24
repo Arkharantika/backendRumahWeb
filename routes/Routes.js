@@ -2,6 +2,7 @@ import express from "express";
 
 // >>> IMPORT THE CONTROLLERS
 import {
+  addUser,
   LoginUser,
   LogoutUser,
   RegisterUser,
@@ -44,7 +45,8 @@ const router = express.Router();
 
 // >>> FOR AUTHENTICATION
 router.get("/token", refreshToken);
-router.post("/register", VerifyToken, RegisterUser);
+router.post("/register", RegisterUser);
+router.post("/adduser", VerifyToken, addUser);
 router.post("/login", LoginUser);
 router.delete("/logout", LogoutUser);
 
