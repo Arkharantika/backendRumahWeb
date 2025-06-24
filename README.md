@@ -1,3 +1,6 @@
+SETTING APLIKASI
+----------------
+
 1. untuk menjalankannya anda harus menggunakan PHP mysql
 2. Buat databasenya, lalu samakan dengan nama yang sesuai pada coding pada folder config/database.js seperti dibawah ini 
 
@@ -10,5 +13,12 @@ const DB = new Sequelize("wow", "root", "", {
 
 3. kemudian pada folder utama ketik npm i --legacy-peer-deps pada main folder (yang ada file index.js nya) untuk instalasi modul
 4. buka postman dan import colection yang nomor 3
-5. yang pertama dijalankan register dulu, untuk mendapatkan user sehingga bisa login,
-6. baru setelah login toke bisa diakes dan semua fitur yang membutuhkan token dapat dijalankan
+
+PROSES APLIKASI
+---------------
+
+5. jalankan file, dengan mengetikkan "node index.js"
+6. yang pertama dijalankan fungsi register dulu, lalu login dengan user yg sudah berhasil di register 
+7. setelah login, jalankan get TOKEN untuk bisa mendapatkan token, yang nantinya di masukan ke dalam authorization, dengan value bearer <token>  
+8. baru setelah login toke bisa diakes dan semua fitur yang membutuhkan token dapat dijalankan
+9. Terdapat fitur logout apabila hendak logout
