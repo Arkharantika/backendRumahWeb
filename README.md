@@ -1,7 +1,7 @@
 SETTING APLIKASI
 ----------------
 
-1. untuk menjalankannya anda harus menggunakan PHP mysql
+1. untuk menjalankannya anda harus menggunakan MySQL database PhpMyadmin
 2. Buat databasenya, lalu samakan dengan nama yang sesuai pada coding pada folder config/database.js seperti dibawah ini 
 
 #nama database wow atau terserah anda menamai nya apa 
